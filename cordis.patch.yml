@@ -1,0 +1,4 @@
+# 悬浮宠物：挂进 shell.overlay，不修改任何原生行。
+- insert:
+    - id: pet-hud
+      name: 'dsh-pet-hud'
