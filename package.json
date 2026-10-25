@@ -35,7 +35,9 @@
     "LICENSE",
     "preview.png",
     "preview-idle.gif",
-    "preview-happy.gif"
+    "preview-happy.gif",
+    "AGENTS.md",
+    "CHANGELOG.md"
   ],
   "dsh": {
     "bundle": {
@@ -50,5 +52,10 @@
         "@deepseek-ai/dsh-client-ui-layout"
       ]
     }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node test/smoke.mjs",
+    "prepublishOnly": "npm run build && npm test"
   }
 }
